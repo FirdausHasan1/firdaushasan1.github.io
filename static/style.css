@@ -1,0 +1,182 @@
+html {
+	background:#222;
+	margin:auto;
+	width:80%;
+}
+
+body{
+	background: linear-gradient(#aaa 0, #ddd 10px, #fff 55px);
+	border: 1px solid black;
+	padding: 10px 20px;
+	box-shadow: 5px 0px 30px #000;
+	border-radius: 8px;
+}
+
+h1{
+	text-align: center;
+	color: #222;
+	margin: 0 0 0px;
+	font-size: 5em;
+	font-style: italic;
+}
+
+h2{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+h3{
+	font-size: 3em;
+}
+
+h4{
+	margin-top: -3%;
+	font-size: 1.25em;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header {
+	background: #dfe3ed;
+}
+
+.banner{
+	width: 100%;
+	height: 280px;
+	background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.384)), url(https://img.koreatimes.co.kr/upload/newsV2/images/202209/b32aa7ea2ce0427c8674c4984a8bf502.jpg) no-repeat center / cover ;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0 auto;
+  }
+
+  p{
+	font-size: 1.5em;
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .desc{
+	text-align: center;
+  }
+
+  .list{
+	list-style-position: inside;
+	text-align: center;
+	font-size: 1.5em;
+	right: 200px;
+  }
+
+  .list1{
+	text-align: left;
+ 	margin-left: 10%;
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+
+  .bar {
+	float: right;
+  }
+
+  .bar a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 25px;
+	text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .bar a:hover {
+	background-color: #111;
+  }
+
+.button {
+	color: #333;
+	background: linear-gradient(#eee, #ddd);
+	border: 1px solid #222;
+	border-radius: 3px;
+	padding: 7px;
+	margin-right: 5px;
+	transition: .3s;
+	font-family: ubuntu, sans-serif;
+	font-size: 1em;
+}
+
+.button:active {
+	background: linear-gradient(#ddd, #eee);
+}
+
+.button:hover, button:focus {
+	box-shadow: 0 0 2px #222;
+}
+
+#execute {
+	margin-top: 5px;;
+	width: 10%;
+	min-width:100px;
+}
+
+.CodeMirror {
+  border: 1px solid #222;
+  height: auto;
+}
+.CodeMirror-scroll {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.error {
+	color:red;
+	transition:.5s;
+	overflow:hidden;
+	margin: 15px;
+}
+
+#output {
+	overflow: auto;
+}
+
+table {
+	width:auto;
+	margin:auto;
+	border:1px solid black;
+ 	border-collapse:collapse;
+ 	margin-bottom:10px;
+	table-layout:fixed;
+}
+
+th, td {
+	border:1px solid #777;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+	white-space: pre-line;
+}
+/* https://www.w3schools.com/css/css_form.asp */
+input[type=text] {
+	width: 131px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	padding: 12px 20px 12px 40px;
+	transition: width 0.4s ease-in-out;
+  }
+  input[type=text]:focus {
+	width: 100%;
+  }
+
+  #meme {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  }

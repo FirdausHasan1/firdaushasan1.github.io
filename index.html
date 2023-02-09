@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
+  <title>Final Project</title>
+</head>
+
+<body>
+  <!-- https://www.w3schools.com/css/css_navbar.asp -->
+  <ul class="nav">
+    <li class="bar"><a href="index.html">Home</a></li>
+    <li class="bar"><a href="index.html">Home</a></li>
+  </ul>
+  <header class="header">
+    <h1>SQL GAMES</h1>
+    <h2>SQL IS FUN !!!!!</h2>
+  </header>
+  <div class="container">
+    <div class="banner">
+    </div>
+    <!-- Description taken from fiftyville cs50-->
+    <p class="desc">The CS50 Duck has been stolen! The town of Fiftyville has called upon you to solve the mystery of the stolen duck. Authorities believe that the thief stole the duck and then,
+      shortly afterwards, took a flight out of town with the help of an accomplice. Your goal is to identify:</p>
+      <ol class="list">
+        <li class="list1">Who the thief is,</li>
+        <li class="list1">What city the thief escaped to, and</li>
+        <li class="list1">Who the thief accomplice is who helped them escape</li>
+      </ol>
+    <div class="paragraph">
+      <h3>What is SQL?</h3> <!-- taken from w3school this explanation-->
+      <h4>SQL stands for Structured Query Language. It lets you access and manipulate databases
+        and  became a standard of the American National Standards Institute (ANSI) in 1986,
+        and of the International Organization for Standardization (ISO) in 1987.
+        <br>
+        <br>
+        Some useful <a href="https://www.w3schools.com/sql/sql_intro.asp">SQL Introduction</a> for beginner.
+        <br>
+        <br>
+        <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp">SQL Keyword reference</a> for some helpful syntax.
+      </h4>
+      <h3>How to solve the mystery?</h3>
+      <h4>All you know is that the theft took place on <u>July 28, 2021</u> and that it took place on <u>Humphrey Street</u>.
+        <br>
+        <br>
+        Use SQL command to query through the database to find the information you need and finally solving the mysteries.
+      </h4>
+      <h3>Lets start right away</h3>
+      <h4>Enter the SQL command inside the textarea. The default command would show the schema for the database. Use execute button to
+        run the command and Reset button to show the schema command.
+        <br>
+        PS: You can run multiple SQL command by seperating each command with semicolon.
+      </h4>
+    </div>
+    <div>
+      <label for='commands'>Enter some SQL</label>
+      <br>
+      <textarea id="commands">SELECT `name`, `sql`
+        FROM `sqlite_master`
+        WHERE type='table'</textarea>
+
+      <button id="execute" class="button">Run</button>
+      <button id="reset" class="button">Reset</button>
+
+      <div id="error" class="error"></div>
+
+      <pre id="output">Results will be displayed here</pre>
+    </div>
+    <div class="check">
+      <h3>Checking the answer</h3>
+      <h4>Input your answer and check whether you capture the right guy or not. Figured the accomplice and
+        manage to determine where the culprit escape city is.
+        <br>
+        <br>
+        Side Note: The image response gonna take some time to process. Do give it sometime. Be mindful with the Upper and lowercase.
+      </h4>
+      <form id="form">
+        <input type="text" placeholder="Answer?" class="guess">
+        <br>
+        <button id="submit">Check Answer</button>
+      </form>
+      <img id="meme" src="https://static.vecteezy.com/system/resources/previews/003/423/831/original/cute-cat-kitten-greeting-cartoon-doodle-background-wallpaper-free-vector.jpg" alt=" ">
+    </div>
+  </div>
+      <h3>Credit</h3>
+      <h4>
+        All of this was made possible with <a href='https://github.com/sql-js/sql.js'>sql.js</a>.
+        <br>
+        Credit to my fav pset <a href='https://cs50.harvard.edu/x/2023/psets/7/fiftyville/'>fiftyville</a>.
+        <br>
+        Credit to all the lectures and notes in <a href='https://www.edx.org/course/introduction-computer-science-harvardx-cs50x'>CS50x</a>.
+        <br>
+        Credit to <a href="https://www.w3schools.com/">w3schools</a> for most of the tutorial.
+        <br>
+        Idea for this final project came from <a href="https://mystery.knightlab.com/">knightlab</a>.
+        <br>
+        Credit to this awesome memegen by <a href ="https://github.com/jacebrowning/memegen#special-characters">jacebrowning</a>.
+        <br>
+        Presentation video credit by <a href="https://www.canva.com/">Canva Creative Studio (DISKET MONO ARCADE GAME)</a>
+      </h4>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/sql/sql.min.js"></script>
+  <script src="gui.js"></script>
+  <script src="check.js"></script>
+
+</body>
+</html>
